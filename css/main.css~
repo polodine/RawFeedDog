@@ -414,6 +414,10 @@ table.body__table-metric td.body__table-metric_item-active:hover {
 	color: #1CD979;
 }
 
+.aside__list-item_small > a{
+	cursor: pointer;
+}
+
 .opacity {
 	position: fixed;
 	height: 100%;
@@ -444,11 +448,6 @@ table.body__table-metric td.body__table-metric_item-active:hover {
 	color: white;
 	font-size: 24px;
 	cursor: pointer;
-}
-
-.lbs-width {
-	width: 142px;
-	display: inline-block;
 }
 
 @media (max-width: 420px) {

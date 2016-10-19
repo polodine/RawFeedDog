@@ -179,6 +179,12 @@
 .list-inline > li {
 	display: block;
 }
+.aside__list-item_small a {
+	cursor: pointer;
+}
+.aside__list_results {
+	width: 80%;
+}
 @media (max-width: 420px) {
 	h1.body__heading_result {
 		top: 45px;

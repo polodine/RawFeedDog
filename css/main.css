@@ -414,6 +414,10 @@ table.body__table-metric td.body__table-metric_item-active:hover {
 	color: #1CD979;
 }
 
+.aside__list-item_small > a{
+	cursor: pointer;
+}
+
 .opacity {
 	position: fixed;
 	height: 100%;
