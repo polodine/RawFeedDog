@@ -19,6 +19,10 @@
 	border: 3px solid #FFD096;
 }
 
+.body__input_step3-g {
+	padding: 5px;
+}
+
 .body__input_step3:focus {
 	border-color: rgb(253, 156, 55);
 }
