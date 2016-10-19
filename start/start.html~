@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Start page</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<style>
+			h1.body__heading{
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="page">
+				<img class="logo logo-long" src="../src/img/long.png"/>
+				<img class="logo logo-short" src="../src/img/short.png"/>
+				<div class="header">
+					<ul class="header__list">
+						<a href="#"><li>ABOUT US</li></a>
+						<a href="#"><li class="header__list-item_white">WHAT IS RAW FED ?</li></a>
+					</ul>
+					<button class="header__button">
+						<div class="icon-bar top-bar"></div>
+						<div class="icon-bar middle-bar"></div>
+						<div class="icon-bar bottom-bar"></div>
+					</button>
+				</div>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container">
+							<h1 class="body__heading">
+								The easiest way to set up raw feeding diet for your dog
+							</h1>
+							<a href="../steps/step1.html">
+							<button class="body__button body__button_profile">
+								CREATE YOUR DOG PROFILE
+							</button>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="aside">
+					<div class="aside__button">
+						&times;
+					</div>
+					<ul class="aside__list">
+						<a href="#" tabindex="-1"><li>About us</li></a>
+						<a href="#" tabindex="-1"><li>Why Raw Fed?</li></a>
+						<a href="#" tabindex="-1"><li class="aside__list-item_small">Privacy Policy</li></a>
+					</ul>
+				</div>
+			<div class="opacity">
+			</div>
+		</div>
+	<script src="../src/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+.step1-page {
+	position: relative;
+	min-height: 500px;
+	height: 100%;
+	width: 100%;
+	background-color: #40E993;
+	z-index: 1;
+}
+
+.body__input_step1 {
+	border: 3px solid #93F8C5;
+	outline-color: #40E993;
+}
+
+.body__input_step1:focus {
+	border-color: rgb(59, 233, 129);
+}
+
+.body__button_next {
+	width: 200px;
+	background-color: #9F36C6;
+	box-shadow: 0 10px 1px 0 #6E0593;
+	-webkit-box-shadow: 0 10px 1px 0 #6E0593;
+	-o-box-shadow: 0 10px 1px 0 #6E0593;
+	-ms-box-shadow: 0 10px 1px 0 #6E0593;
+	-moz-box-shadow: 0 10px 1px 0 #6E0593;
+}
+
+.body__button_next:hover {
+	background-color: #8E15B9;
+}
+
+.body__button_next:active {
+	background-color: #B458D5;
+	top: 5px;
+	box-shadow: 0 5px 1px 0 #6E0593;
+	-webkit-box-shadow: 0 5px 1px 0 #6E0593;
+	-o-box-shadow: 0 5px 1px 0 #6E0593;
+	-ms-box-shadow: 0 5px 1px 0 #6E0593;
+	-moz-box-shadow: 0 5px 1px 0 #6E0593;
+}

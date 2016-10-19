@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Step 2</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<link rel="stylesheet" href="../css/step2.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="page step2-page">
+				<a href="../steps/step1.html"><span class="back"><img class="arrow arrow_left" width=20 height=20 src="../src/img/arrow.svg"/></span></a>
+				<img class="logo logo-short" src="../src/img/short.png"/>
+				<img class="logo logo-long" src="../src/img/long.png"/>
+				<div class="header">
+					<div class="header__center header__center_step2">
+						STEP 2/4
+					</div>
+					<ul class="header__list header__list_step2">
+						<a href="#"><li>ABOUT US</li></a>
+						<a href="#"><li class="header__list-item_white">WHAT IS RAW FED ?</li></a>
+					</ul>
+					<button class="header__button">
+						<div class="icon-bar top-bar"></div>
+						<div class="icon-bar middle-bar"></div>
+						<div class="icon-bar bottom-bar"></div>
+					</button>
+				</div>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container">
+							<h1 class="body__heading">
+								Meal Ratio
+							</h1>
+							<p class="body__text body__text_step2">
+								PMR is designed to provide family dogs with a homemade diet that replicates the diet of a wild canine without requiring the pet to hunt and kill
+							</p>
+							<table class="body__table body__table_step2">
+								<tr>
+									<td>
+										Meat
+									</td>
+									<td>
+										<input class="body__input body__input_step2" type="text" autofocus>
+										</input>
+									</td>
+									<td class="body__table-text_percent">
+										%
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Bones
+									</td>
+									<td>
+										<input class="body__input body__input_step2" type="text">
+										</input>
+									</td>
+									<td class="body__table-text_percent">
+										%
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Organ1
+									</td>
+									<td>
+										<input class="body__input body__input_step2" type="text">
+										</input>
+									</td>
+									<td class="body__table-text_percent">
+										%
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Organ2
+									</td>
+									<td>
+										<input class="body__input body__input_step2" type="text">
+										</input>
+									</td>
+									<td class="body__table-text_percent">
+										%
+									</td>
+								</tr>
+							</table>
+							<a href="../steps/step3.html">
+							<button class="body__button body__button_next">
+								Next
+							</button>
+							</a>
+							<div style="height: 50px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-down">
+					<span class="page-down__text page-down__text_step2">Read more <br>about Meal Ratio<br> <span class="page-down__arrow"><img class="arrow_bottom" width=20 height=20 src="../src/img/arrow.svg"/></span></span>
+				</div>
+			</div>
+			<div class="page step2-page">
+				<div class="page__body page__body_info">
+					<div class="body body__info">
+						<div class="body__container body__container_info">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="aside__button">
+					&times;
+				</div>
+				<ul class="aside__list">
+					<a href="#" tabindex="-1"><li>About us</li></a>
+					<a href="#" tabindex="-1"><li>Why Raw Fed?</li></a>
+					<a href="#" tabindex="-1"><li class="aside__list-item_small">Privacy Police</li></a>
+				</ul>
+			</div>
+			<div class="opacity">
+			</div>
+		</div>
+		<script src="../src/main.js"></script>
+	</body>
+</html><

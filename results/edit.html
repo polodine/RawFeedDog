@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Edit</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<link rel="stylesheet" href="../css/edit.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="page result-page">
+				<div class="header">
+					<ul class="header__list header__list_result header__button">
+						<a href="../results/profile.html"><li><img src="../src/img/arrowPinkPink.svg" height=14 width=14 class="arrow_left"/> BACK</li></a>
+					</ul>
+				</div>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container body__container_results">
+							<div class="lists">
+							<ul>
+								<li>Dog's Name</li>
+								<li><input class="i000 long" id="dog-name" onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32'></li>
+							</ul>
+							<ul>
+								<li>Dog weight</li>
+								<li><div class="lbs-width"><input class="i000 " id="major-weight" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><span id="major-unit"></span></div><input class="i000 " id="minor-weight" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><span id="minor-unit"></span></li>
+							</ul>
+							<div class="nowrap">
+							<ul>
+								<li><span class="grey-text">Meal Ratio</span><br class="break"> Meat</li>
+								<li><input class="i000" id="meat-ratio" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> %</li>
+							</ul>
+							<ul>
+								<li>Bones</li>
+								<li><input class="i000" id="bones-ratio" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> %</li>
+							</ul>
+						</div>
+						<div class="nowrap">
+							<ul>
+								<li>Organ1</li>
+								<li><input class="i000" id="organ1-ratio" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> %</li>
+							</ul>
+							<ul>
+								<li>Organ2</li>
+								<li><input class="i000" id="organ2-ratio" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> %</li>
+							</ul>
+						</div>
+							<ul>
+								<li class="mealText">Meal Weight Ratio</li>
+								<li class="meal"><input class="i000" id="weight-ratio" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> %</li>
+							</ul>
+						</div>
+							<button class="body__button body__button_rest" onclick="updateUser()">
+								SAVE CHANGES
+							</button>
+							<br>
+							<div class="reset" onclick="cancelProfileEditing()">CANCEL</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-down">
+							<table class="body__table-metric">
+								<tr>
+									<td id="imperial-unit-button" onclick="imperialUnitProfileEditorOnClickListener(this)">
+										Imperial
+									</td>
+									<td class="body__table-metric_item-active" id="metric-unit-button" onclick="metricUnitProfileEditorOnClickListener(this)">
+										Metric
+									</td>
+								</tr>
+							</table>
+				</div>
+			</div>
+		</div>
+		<script src="../src/cookie.js"></script>
+		<script>
+		  renderProfileEditor();
+		</script>
+	</body>
+</html>

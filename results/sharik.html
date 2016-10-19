@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>RESULT</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<link rel="stylesheet" href="../css/meal.css">
+		<link rel="stylesheet" href="../css/sharik.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="page result-page">
+				<div class="header">
+					<ul class="header__list header__list_result header__button">
+						<a href="#"><li>Sharik <img height=16 width=16 class="arrow_right" src="../src/img/arrowPink.svg"/></li></a>
+					</ul>
+				</div>
+				<h1 class="body__heading body__heading_result">
+								<span class="body__heading_result-active sharik">Meal Ratio Calc</span><span style="cursor: pointer; text-decoration: none; color: #CCCCCC"> / <span class="body__heading_result-notactive meal">  Shop Calculator</span></span>
+							</h1>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container body__container_results">
+
+							<div class="sharikContainer">
+							<table class="body__table-day">
+								<tr>
+									<td class="body__table-day_item-active" onclick="dailyOnClickListener(this)">
+										DAILY
+									</td>
+									<td onclick="weeklyOnClickListener(this)">
+										WEEKLY
+									</td>
+									<td onclick="monthlyOnClickListener(this)">
+										MONTHLY
+									</td>
+								</tr>
+							</table>
+							<h2 class="body__results-text">
+								Total Meal Weight
+							</h2>
+							<h1 class="body__results-number" id="total-meal-weight">
+								<!-- 14<span class="body__results_number-text">kg</span> 100<span class="body__results_number-text">g</span> -->
+							</h1>
+							<hr class="line">
+							<ul class="body__results_list">
+								<li>
+									<table>
+										<tr>
+											<td>
+												<span class="list-text">Meat </span> <span class="list-percent" id="meat-percent">
+													<!-- 80% -->
+												</span><br>
+												<div id="meat-weight">
+												</div>
+												<!-- <span class="list-text">Meat </span> <span class="list-percent">80%</span><br><span class="list-number">1</span><span class="list-number_text">kg</span> <span class="list-number">800</span><span class="list-number_text">g</span> -->
+											</td>
+											<td>
+												<span class="list-text">Bones </span> <span class="list-percent" id="bones-percent">
+													<!-- 10% -->
+												</span><br>
+												<div id="bones-weight">
+												</div>
+												<!-- <span class="list-text">Bones </span> <span class="list-percent">10%</span><br><span class="list-number">910</span><span class="list-number_text">g</span> -->
+											</td>
+									</table>
+								</li>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<span class="list-text">Organ1 </span> <span class="list-percent" id="organ1-percent">
+													<!-- 5% -->
+												</span><br>
+												<div id="organ1-weight">
+												</div>
+												<!-- <span class="list-text">Organ1</span><span class="list-percent">5%</span><br><span class="list-number">5</span><span class="list-number_text">g</span> -->
+											</td>
+											<td>
+												<span class="list-text">Organ2 </span> <span class="list-percent" id="organ2-percent">
+													<!-- 5% -->
+												</span><br>
+												<div id="organ2-weight">
+												</div>
+												<!-- <span class="list-text">Organ2 </span> <span class="list-percent">5%</span><br><span class="list-number">5</span><span class="list-number_text">g</span> -->
+											</td>
+										</tr>
+									</table>
+								</li>
+							</ul>
+						</div>
+				<div class="meal-container">
+							<div class="list-container">
+								<ul class="list-inline">
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Meat <span class="list-percent">80%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Bones <span class="list-percent">10%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="list-inline">
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Organ1<span class="list-percent"> 5%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Organ2 <span class="list-percent">5%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<button class="body__button body__button_rest">
+								UPDATE THE REST
+							</button>
+							<span class="reset">RESET</span>
+							<h2 class="results__text">
+								According&nbsp;your&nbsp;"Barbos"<br>preferences&nbsp;you&nbsp;can&nbsp;prepare&nbsp;:
+							</h2>
+							<p class="text-results">
+								<span class="body__results-number">
+									102
+								</span>
+								<span class="list-number_text">
+									meals
+								</span>
+							</p>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-down">
+							<table class="body__table-metric">
+								<tr>
+									<td id="imperial-unit-button" onclick="imperialUnitOnClickListener(this)">
+										Imperial
+									</td>
+									<td id="metric-unit-button" class="body__table-metric_item-active" onclick="metricUnitOnClickListener(this)">
+										Metric
+									</td>
+								</tr>
+							</table>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="aside__button">
+					&times;
+				</div>
+				<ul class="aside__list aside__list_results">
+					<li style="font-size:24px;" id="current-profile"></li>
+					<li class="aside__list-item_small aside__list-item_small"><a href="../results/profile.html" tabindex="-1" style="font-size:14px;">SEE PROFILE</a></li>
+				</ul>
+				<ul class="aside__list aside__list_results aside__list_results-name">
+					<div id="other-profiles">
+					</div>
+					<!-- <li class="aside__list-item_small aside__list-item_small"><a style="font-size:14px;" href="" tabindex="-1">Barbos</a></li>
+					<li class="aside__list-item_small aside__list-item_small"><a style="font-size:14px;" href="#" tabindex="-1">Jack</a></li>
+					<li class="aside__list-item_small aside__list-item_small"><a style="font-size:14px;" href="#" tabindex="-1">Mars</a></li> -->
+					<li class="aside__list-item_small aside__list-item_small-add"><a style="font-size:18px;" href="../start/start.html" tabindex="-1">+Add new</a></li>
+				</ul>
+			</div>
+			<div class="opacity">
+			</div>
+			<div class="page page_fader">
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container">
+							Welcome to Raw Fed Team<br> <span class="page_fader-name">Sharik</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../src/main.js"></script>
+		<script src="../src/cookie.js"></script>
+		<script>
+			setCurrentUser(getCurrentUser().name);
+			document.querySelector('.page_fader-name').innerHTML = getCurrentUser().name;
+			renderProfiles();
+			console.log(document.cookie);
+		</script>
+		<script>
+			var fader = document.querySelector('.page_fader');
+			setTimeout(pageFader, 1000);
+			function pageFader() {
+				fader.style.opacity = 0;
+				fader.style.zIndex = -2;
+			}
+		</script>
+		<script>
+			var meal = document.querySelector('.meal');
+			var sharik = document.querySelector('.sharik');
+			var mealContainer = document.querySelector('.meal-container');
+			var sharikContainer = document.querySelector('.sharikContainer');
+			meal.onclick = function() {
+				sharikContainer.style.display = 'none';
+				mealContainer.style.display = 'block';
+				meal.classList.add('body__heading_result-active');
+				meal.classList.remove('body__heading_result-notactive');
+				sharik.classList.add('body__heading_result-notactive');
+				sharik.classList.remove('body__heading_result-active');
+			}
+			sharik.onclick = function() {
+				mealContainer.style.display = 'none';
+				sharikContainer.style.display = 'block';
+				sharik.classList.add('body__heading_result-active');
+				sharik.classList.remove('body__heading_result-notactive');
+				meal.classList.add('body__heading_result-notactive');
+				meal.classList.remove('body__heading_result-active');
+			}
+		</script>
+	</body>
+</html>

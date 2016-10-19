@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Step 1</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<link rel="stylesheet" href="../css/step1.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="page step1-page">
+				<img class="logo logo-long" src="../src/img/long.png"/>
+				<img class="logo logo-short" src="../src/img/short.png"/>
+				<div class="header">
+					<div class="header__center">
+						STEP 1/4
+					</div>
+					<ul class="header__list">
+						<a href="#"><li class="hover">ABOUT US</li></a>
+						<a href="#"><li class="hover header__list-item_white">WHAT IS RAW FED ?</li></a>
+					</ul>
+					<button class="header__button">
+						<div class="icon-bar top-bar"></div>
+						<div class="icon-bar middle-bar"></div>
+						<div class="icon-bar bottom-bar"></div>
+					</button>
+				</div>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container">
+							<h1 class="body__heading">
+								Your Dog's Name
+							</h1>
+							<input class="body__input body__input_step1" id="dog-name-input" type="text" autofocus
+							  onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32'>
+							</input>
+							<!-- <a href="../steps/step2.html"> -->
+							<button class="body__button body__button_next" onclick="stepOneOnClickListener()">
+								Next
+							</button>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="aside__button">
+					&times;
+				</div>
+				<ul class="aside__list">
+					<a href="#" tabindex="-1"><li>About us</li></a>
+					<a href="#" tabindex="-1"><li>Why Raw Fed?</li></a>
+					<a href="#" tabindex="-1"><li class="aside__list-item_small">Privacy Police</li></a>
+				</ul>
+			</div>
+			<div class="opacity">
+			</div>
+		</div>
+		<script src="../src/main.js"></script>
+		<script src="../src/cookie.js"></script>
+	</body>
+</html><

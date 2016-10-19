@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>RESULT</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<link rel="stylesheet" href="../css/meal.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="page result-page">
+				<div class="header">
+					<ul class="header__list header__list_result header__button">
+						<a href="#"><li>Sharik ></li></a>
+					</ul>
+				</div>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container body__container_results">
+							<h1 class="body__heading body__heading_result">
+								<a href="../results/sharik.html" style="text-decoration: none; color: #CCCCCC"><span class="body__heading_result-notactive">Meal Ratio Calc</span></a> / <span class="body__heading_result-active">Shop Calculator</span>
+							</h1>
+							<div class="list-container">
+								<ul class="list-inline">
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Meat <span class="list-percent">80%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"> <span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Bones <span class="list-percent">10%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="list-inline">
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Organ&nbsp; <span class="list-percent"> 5%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<ul class="body__results_list-inline">
+											<li class="body__results-text">
+												Organ2 <span class="list-percent">5%</span>
+											</li>
+											<li>
+												<input class="i000"><span class="list-text"> kg</span>
+											</li>
+											<li class="hardlist">
+												<input class="i000"><span class="list-text"> g</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<button class="body__button body__button_rest">
+								UPDATE THE REST
+							</button>
+							<span class="reset">RESET</span>
+							<h2 class="results__text">
+								Accourding your "Barbos" preferences<br> you can prepare&nbsp;:
+							</h2>
+							<p class="text-results">
+								<span class="body__results-number">
+									102
+								</span>
+								<span class="list-number_text">
+									meals
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="page-down">
+							<table class="body__table-metric">
+								<tr>
+									<td>
+										Imperial
+									</td>
+									<td class="body__table-metric_item-active">
+										Metric
+									</td>
+								</tr>
+							</table>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="aside__button">
+					&times;
+				</div>
+				<ul class="aside__list aside__list_results">
+					<li>Sharik</li>
+					<li class="aside__list-item_small aside__list-item_small"><a href="#" tabindex="-1">SEE PROFILE</a></li>
+				</ul>
+				<ul class="aside__list aside__list_results aside__list_results-name">
+					<li class="aside__list-item_small aside__list-item_small"><a href="#" tabindex="-1">Barbos</a></li>
+					<li class="aside__list-item_small aside__list-item_small"><a href="#" tabindex="-1">Jack</a></li>
+					<li class="aside__list-item_small aside__list-item_small"><a href="#" tabindex="-1">Mars</a></li>
+					<li class="aside__list-item_small aside__list-item_small-add"><a href="#" tabindex="-1">+Add new</a></li>
+				</ul>
+			</div>
+			<div class="opacity">
+			</div>
+		</div>
+		<script src="../src/main.js"></script>
+	</body>
+</html>

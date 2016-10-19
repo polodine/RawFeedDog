@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Profile</title>
+		<link rel="stylesheet" href="../src/main.css">
+		<link rel="stylesheet" href="../css/profile.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="page result-page">
+				<div class="header">
+					<ul class="header__list header__list_result header__button">
+						<a href="../results/sharik.html"><li><img src="../src/img/arrowPink.svg" width=14 height=14 class="arrow_left"/> BACK</li></a>
+					</ul>
+				</div>
+				<div class="page__body">
+					<div class="body">
+						<div class="body__container body__container_results">
+							<table class="body__table-profile">
+								<tr>
+									<td class="body__table-profile_grey">
+										Dog's Name
+									</td>
+									<td class="body__table-profile_name" id="profile-name">
+										<!-- Sharik -->
+									</td>
+								</tr>
+								<tr>
+									<td class="body__table-profile_grey">
+										Meal Ratio (%)
+									</td>
+									<td class="body__table-profile_black" id="profile-meal-ratio">
+										<!-- 80/10/5/5 -->
+									</td>
+								</tr>
+								<tr>
+									<td class="body__table-profile_grey">
+										Dog Weight
+									</td>
+									<td class="body__table-profile_black" id="profile-weight">
+										<!-- 16 kg 240 g -->
+									</td>
+								</tr>
+								<tr>
+									<td class="body__table-profile_grey">
+										Meal Weight<br> Ratio
+									</td>
+									<td class="body__table-profile_black" id="profile-weight-ratio">
+										<!-- 2.5 % -->
+									</td>
+								</tr>
+							</table>
+							<a href="../results/edit.html">
+							<button class="body__button body__button_rest">
+								EDIT THE PROFILE
+							</button>
+						</a>
+							<div class="reset" onclick="deleteUser()">DELETE PROFILE</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-down">
+							<table class="body__table-metric">
+								<tr>
+									<td id="imperial-unit-button" onclick="imperialUnitProfileOnClickListener(this)">
+										Imperial
+									</td>
+									<td id="metric-unit-button" class="body__table-metric_item-active" onclick="metricUnitProfileOnClickListener(this)">
+										Metric
+									</td>
+								</tr>
+							</table>
+				</div>
+			</div>
+		</div>
+		<script src="../src/cookie.js"></script>
+		<script>
+		  renderDogProfile();
+		</script>
+	</body>
+</html>
